@@ -1,0 +1,74 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Test POST method of API using Supertest and Cucumber",
+    "line": 1,
+    "id": "test-post-method-of-api-using-supertest-and-cucumber",
+    "tags": [],
+    "uri": "features\\post.feature",
+    "elements": [
+      {
+        "id": "test-post-method-of-api-using-supertest-and-cucumber;submit-a-payload-to-api-and-check-response",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Submit a payload to API and check response",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I submit a POST request to the REST API endpoint with the payload",
+            "match": {
+              "location": "step-definitions\\post.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 409000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "the response should have a status code of 201",
+            "match": {
+              "location": "step-definitions\\post.steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the response should include a \"id\" property",
+            "match": {
+              "location": "step-definitions\\post.steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the \"name\" property in the response should have the value \"morpheus\"",
+            "match": {
+              "location": "step-definitions\\post.steps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
